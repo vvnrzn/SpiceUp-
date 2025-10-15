@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SpiceUp! — Shop</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="nav-inner">
+      <div class="brand">SpiceUp!</div>
+      <nav class="nav-links" role="navigation" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-label="Menu toggle">
+      <label for="menu-toggle" class="hamburger" aria-hidden="true">
+        <svg width="20" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </label>
+    </div>
+
+    <div class="mobile-nav">
+      <a href="index.html">Home</a> |
+      <a href="shop.html">Shop</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO -->
+    <section class="hero container" aria-labelledby="shop-hero">
+      <div class="hero-content">
+        <h1 id="shop-hero">Pick a chili, adopt a plant, earn bragging rights.</h1>
+        <p>From beginner-friendly Jalapeños to world-conquering Reapers — the SpiceUp! catalog has 12 hand-picked personalities. Which one matches you?</p>
+        <a class="cta" href="#products">Browse seeds</a>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1672239927784-7a5e8bd03d58?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chili stall with baskets of peppers">
+      </div>
+    </section>
+
+    <!-- PRODUCT GRID -->
+    <section id="products" class="section container" aria-labelledby="products-title">
+      <h2 id="products-title">Seed Catalog — 12 picks</h2>
+
+      <div class="products">
+        <!-- Product 1 -->
+        <article class="product" aria-labelledby="p1">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1597115580039-b849ed2d6398?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jalapeño peppers">
+            <div class="overlay">Jalapeño — Gentle, herbaceous, great for nachos and smiles.</div>
+          </div>
+          <div class="meta">
+            <div class="meta-top">
+              <div id="p1" class="title">Jalapeño</div>
+              <div class="product-origin">Mexico</div>
+            </div>
+            <div class="meta-bottom">
+              <div class="qty-controls">
+                <button aria-label="decrease">−</button>
+                <input type="number" value="1" min="0" aria-label="quantity" />
+                <button aria-label="increase">+</button>
+              </div>
+              <button class="add-basket" title="Add to cart" aria-label="Add Jalapeño to basket">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h13l-1.4 9.2A2 2 0 0 1 15.7 17H8.3a2 2 0 0 1-1.9-1.8L5 6z" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6V4a3 3 0 0 1 6 0v2" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product" aria-labelledby="p2">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1650080892550-c3a9a3ed1345?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thai bird's eye peppers">
+            <div class="overlay">Thai Bird's Eye — small but vicious; ideal for curries and confessions.</div>
+          </div>
+          <div class="meta">
+            <div class="meta-top">
+              <div id="p2" class="title">Thai Bird's Eye</div>
+              <div class="product-origin">Thailand</div>
+            </div>
+            <div class="meta-bottom">
+              <div class="qty-controls">
+                <button aria-label="decrease">−</button>
+                <input type="number" value="1" min="0" aria-label="quantity" />
+                <button aria-label="increase">+</button>
+              </div>
+              <button class="add-basket" title="Add to cart" aria-label="Add Thai Bird's Eye to basket">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h13l-1.4 9.2A2 2 0 0 1 15.7 17H8.3a2 2 0 0 1-1.9-1.8L5 6z" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product" aria-labelledby="p3">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1597879280371-b78b5d848c94?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Habanero peppers">
+            <div class="overlay">Habanero — fruity, cheeky, and guaranteed to declare itself at the table.</div>
+          </div>
+          <div class="meta">
+            <div class="meta-top">
+              <div id="p3" class="title">Habanero</div>
+              <div class="product-origin">Amazon</div>
+            </div>
+            <div class="meta-bottom">
+              <div class="qty-controls">
+                <button aria-label="decrease">−</button>
+                <input type="number" value="1" min="0" aria-label="quantity" />
+                <button aria-label="increase">+</button>
+              </div>
+              <button class="add-basket" title="Add to cart" aria-label="Add Habanero to basket">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h13l-1.4 9.2A2 2 0 0 1 15.7 17H8.3a2 2 0 0 1-1.9-1.8L5 6z" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product" aria-labelledby="p4">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1743670476802-886108356b1d?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="overlay">Scotch Bonnet — tropical heat with a sun-kissed attitude.</div>
+          </div>
+          <div class="meta">
+            <div class="meta-top">
+              <div id="p4" class="title">Scotch Bonnet</div>
+              <div class="product-origin">Caribbean</div>
+            </div>
+            <div class="meta-bottom">
+              <div class="qty-controls">
+                <button aria-label="decrease">−</button>
+                <input type="number" value="1" min="0" aria-label="quantity" />
+                <button aria-label="increase">+</button>
+              </div>
+              <button class="add-basket" title="Add to cart" aria-label="Add Scotch Bonnet to basket">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h13l-1.4 9.2A2 2 0 0 1 15.7 17H8.3a2 2 0 0 1-1.9-1.8L5 6z" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product" aria-labelledby="p5">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1647553427660-848cc076428a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ghost pepper">
+            <div class="overlay">Ghost Pepper — rumored to haunt the bravest tongues.</div>
+          </div>
+          <div class="meta">
+            <div class="meta-top">
+              <div id="p5" class="title">Ghost Pepper</div>
+              <div class="product-origin">India</div>
+            </div>
+            <div class="meta-bottom">
+              <div class="qty-controls">
+                <button aria-label="decrease">−</button>
+                <input type="number" value="1" min="0" aria-label="quantity" />
+                <button aria-label="increase">+</button>
+              </div>
+              <button class="add-basket" title="Add to cart" aria-label="Add Ghost Pepper to basket">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h13l-1.4 9.2A2 2 0 0 1 15.7 17H8.3a2 2 0 0 1-1.9-1.8L5 6z" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product" aria-labelledby="p6">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1729174078381-c5e62941f118?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Carolina reaper">
+            <div class="overlay">Carolina Reaper — the drama queen of heat. Handle with respect.</div>
+          </div>
+          <div class="meta">
+            <div class="meta-top">
+              <div id="p6" class="title">Carolina Reaper</div>
+              <div class="product-origin">USA</div>
+            </div>
+            <div class="meta-bottom">
+              <div class="qty-controls">
+                <button aria-label="decrease">−</button>
+                <input type="number" value="1" min="0" aria-label="quantity" />
+                <button aria-label="increase">+</button>
+              </div>
+              <button class="add-basket" title="Add to cart" aria-label="Add Carolina Reaper to basket">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h13l-1.4 9.2A2 2 0 0 1 15.7 17H8.3a2 2 0 0 1-1.9-1.8L5 6z" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article class="product" aria-labelledby="p7">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1666213866268-42e8f92888e1?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Aji amarillo peppers">
+            <div class="overlay">Aji Amarillo — bright, citrusy, excellent in Peruvian cuisine.</div>
+          </div>
+          <div class="meta">
+            <div class="meta-top">
+              <div id="p7" class="title">Aji Amarillo</div>
+              <div class="product-origin">Peru</div>
+            </div>
+            <div class="meta-bottom">
+              <div class="qty-controls">
+                <button aria-label="decrease">−</button>
+                <input type="number" value="1" min="0" aria-label="quantity" />
+                <button aria-label="increase">+</button>
+              </div>
+              <button class="add-basket" title="Add to cart" aria-label="Add Aji Amarillo to basket">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h13l-1.4 9.2A2 2 0 0 1 15.7 17H8.3a2 2 0 0 1-1.9-1.8L5 6z" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article class="product" aria-labelledby="p8">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1747660579521-434333d58f5a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Poblano peppers">
+            <div class="overlay">Poblano — calm, smoky, loves to be roasted and stuffed.</div>
+          </div>
+          <div class="meta">
+            <div class="meta-top">
+              <div id="p8" class="title">Poblano</div>
+              <div class="product-origin">Mexico</div>
+            </div>
+            <div class="meta-bottom">
+              <div class="qty-controls">
+                <button aria-label="decrease">−</button>
+                <input type="number" value="1" min="0" aria-label="quantity" />
+                <button aria-label="increase">+</button>
+              </div>
+              <button class="add-basket" title="Add to cart" aria-label="Add Poblano to basket">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h13l-1.4 9.2A2 2 0 0 1 15.7 17H8.3a2 2 0 0 1-1.9-1.8L5 6z" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 9 -->
+        <article class="product" aria-labelledby="p9">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1615860767493-6d04ffeed55e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Serrano peppers">
+            <div class="overlay">Serrano — lively and bright. Great fresh in salsas.</div>
+          </div>
+          <div class="meta">
+            <div class="meta-top">
+              <div id="p9" class="title">Serrano</div>
+              <div class="product-origin">Mexico</div>
+            </div>
+            <div class="meta-bottom">
+              <div class="qty-controls">
+                <button aria-label="decrease">−</button>
+                <input type="number" value="1" min="0" aria-label="quantity" />
+                <button aria-label="increase">+</button>
+              </div>
+              <button class="add-basket" title="Add to cart" aria-label="Add Serrano to basket">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h13l-1.4 9.2A2 2 0 0 1 15.7 17H8.3a2 2 0 0 1-1.9-1.8L5 6z" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 10 -->
+        <article class="product" aria-labelledby="p10">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1704473509931-971356e22feb?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Anaheim peppers">
+            <div class="overlay">Anaheim — chill, roasting-friendly, and surprisingly versatile.</div>
+          </div>
+          <div class="meta">
+            <div class="meta-top">
+              <div id="p10" class="title">Anaheim</div>
+              <div class="product-origin">USA</div>
+            </div>
+            <div class="meta-bottom">
+              <div class="qty-controls">
+                <button aria-label="decrease">−</button>
+                <input type="number" value="1" min="0" aria-label="quantity" />
+                <button aria-label="increase">+</button>
+              </div>
+              <button class="add-basket" title="Add to cart" aria-label="Add Anaheim to basket">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h13l-1.4 9.2A2 2 0 0 1 15.7 17H8.3a2 2 0 0 1-1.9-1.8L5 6z" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 11 -->
+        <article class="product" aria-labelledby="p11">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1721991805987-646e819737d2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pequin peppers">
+            <div class="overlay">Pequin — tiny but feisty; ideal for flakes and tradition.</div>
+          </div>
+          <div class="meta">
+            <div class="meta-top">
+              <div id="p11" class="title">Pequin</div>
+              <div class="product-origin">Mexico</div>
+            </div>
+            <div class="meta-bottom">
+              <div class="qty-controls">
+                <button aria-label="decrease">−</button>
+                <input type="number" value="1" min="0" aria-label="quantity" />
+                <button aria-label="increase">+</button>
+              </div>
+              <button class="add-basket" title="Add to cart" aria-label="Add Pequin to basket">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h13l-1.4 9.2A2 2 0 0 1 15.7 17H8.3a2 2 0 0 1-1.9-1.8L5 6z" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 12 -->
+        <article class="product" aria-labelledby="p12">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1737957509898-c0ba9866353b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cascade of mixed peppers">
+            <div class="overlay">Mixed Seed Pack — variety is the best policy. Surprise yourself.</div>
+          </div>
+          <div class="meta">
+            <div class="meta-top">
+              <div id="p12" class="title">Mixed Pack</div>
+              <div class="product-origin">Global</div>
+            </div>
+            <div class="meta-bottom">
+              <div class="qty-controls">
+                <button aria-label="decrease">−</button>
+                <input type="number" value="1" min="0" aria-label="quantity" />
+                <button aria-label="increase">+</button>
+              </div>
+              <button class="add-basket" title="Add to cart" aria-label="Add Mixed Pack to basket">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h13l-1.4 9.2A2 2 0 0 1 15.7 17H8.3a2 2 0 0 1-1.9-1.8L5 6z" stroke="#222" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SCOVILLE SCALE -->
+    <section class="section container" aria-labelledby="scoville-title">
+      <h2 id="scoville-title">Scoville Scale — featured chilis</h2>
+
+      <!-- Desktop / Tablet Table -->
+      <table class="scoville-table" aria-describedby="scoville-desc">
+        <thead>
+          <tr><th>Chili</th><th>Origin</th><th>Scoville Heat Units (SHU)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Jalapeño</td><td>Mexico</td><td>2,500 – 8,000</td></tr>
+          <tr><td>Serrano</td><td>Mexico</td><td>10,000 – 23,000</td></tr>
+          <tr><td>Aji Amarillo</td><td>Peru</td><td>30,000 – 50,000</td></tr>
+          <tr><td>Habanero</td><td>Amazon</td><td>100,000 – 350,000</td></tr>
+          <tr><td>Ghost Pepper (Bhut)</td><td>India</td><td>~1,000,000+</td></tr>
+          <tr><td>Carolina Reaper</td><td>USA</td><td>~1,400,000+</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Mobile-friendly list -->
+      <ul class="scoville-list" aria-hidden="true">
+        <li class="scoville-item"><strong>Jalapeño</strong><span>Mexico — 2,500–8,000 SHU</span></li>
+        <li class="scoville-item"><strong>Serrano</strong><span>Mexico — 10,000–23,000 SHU</span></li>
+        <li class="scoville-item"><strong>Aji Amarillo</strong><span>Peru — 30,000–50,000 SHU</span></li>
+        <li class="scoville-item"><strong>Habanero</strong><span>Amazon — 100,000–350,000 SHU</span></li>
+        <li class="scoville-item"><strong>Ghost Pepper</strong><span>India — ~1,000,000+ SHU</span></li>
+        <li class="scoville-item"><strong>Carolina Reaper</strong><span>USA — ~1,400,000+ SHU</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="foot-inner">
+      <div>© 2025 SpiceUp! — All rights reserved</div>
+      <div class="socials">
+        <span style="opacity:0.9">Follow us:</span>
+        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-width="1.3"/><circle cx="12" cy="12" r="3.2" stroke="#fff" stroke-width="1.3"/><circle cx="17.5" cy="6.5" r="0.75" fill="#fff"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M14 9h2V6h-2c-1.1 0-2 .9-2 2v1H10v3h2v6h3v-6h2.5L18 9h-2z" fill="#fff"/></svg></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
