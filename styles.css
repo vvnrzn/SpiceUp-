@@ -1,17 +1,11 @@
-/* styles.css - SpiceUp! shared stylesheet
-   Fonts: Montserrat (headings), Open Sans (body)
-*/
 
-/* --- Google Font fallbacks loaded in HTML --- */
-
-/* Main content wrapper spacing */
 main {
   background-color: #f1e8de;
-  padding: 2rem;        /* space *inside* the rectangle */
-  margin: 2rem auto;    /* space *outside* the rectangle */
-  max-width: 1200px;    /* optional: keeps content nicely centered */
-  border-radius: 12px;  /* optional: soft rounded edges */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* optional: subtle depth */
+  padding: 2rem;       
+  margin: 2rem auto;
+  max-width: 1200px;    
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
 }
 
 
@@ -113,7 +107,7 @@ body{
   padding: 1rem;
 }
 
-/* --- Hero (present on every page) --- */
+/* --- Hero --- */
 .hero{
   display:flex;
   align-items:center;
@@ -226,7 +220,7 @@ body{
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  height: 250px; /* Increase the height to accommodate all elements */
+  height: 250px; 
 }
 
 /* Image wrapper */
@@ -262,7 +256,7 @@ body{
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
-/* Show overlay on hover - also scale image slightly */
+/* Show overlay on hover */
 .product:hover img {
   transform: scale(1.06);
 }
@@ -275,15 +269,15 @@ body{
 .product .meta {
   padding: 0.85rem 0.9rem;
   display: flex;
-  flex-direction: column; /* Stack meta elements vertically */
-  justify-content: space-between; /* Space out elements evenly */
-  height: 100%; /* Take full height of the card */
+  flex-direction: column; 
+  justify-content: space-between;
+  height: 100%; 
 }
 
 .product .meta-top {
   display: flex;
-  justify-content: space-between; /* Space name and country */
-  align-items: center; /* Center vertically */
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 .product .title {
@@ -291,23 +285,23 @@ body{
   font-family: "Montserrat", sans-serif;
   font-size: 0.95rem;
   color: var(--charcoal);
-  text-align: left; /* Align seed name to the left */
+  text-align: left;
 }
 
 .product .product-origin {
-  text-align: right; /* Align country to the right */
+  text-align: right; 
 }
 
 /* Bottom meta section styles */
 .product .meta-bottom {
-  display: flex; /* Align quantity controls and basket icon horizontally */
-  justify-content: space-between; /* Space them evenly */
-  align-items: center; /* Center vertically */
-  margin-top: auto; /* Push this section to the bottom */
-  padding-top: 0.5rem; /* Add some padding for spacing */
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  margin-top: auto;
+  padding-top: 0.5rem; 
 }
 
-/* Quantity controls */
+/* Quantity*/
 .qty-controls {
   display: flex;
   align-items: center;
@@ -493,7 +487,7 @@ legend{
   text-decoration:none;
 }
 
-/* --- Responsive breakpoints --- */
+/* --- Responsiv --- */
 /* Mobile-first: default stacks vertically */
 @media (max-width:599px){
   .nav-links{ display:none }
@@ -564,3 +558,4 @@ a:focus, button:focus, input:focus, textarea:focus{
   outline-offset: 2px;
   border-radius:8px;
 }
+
