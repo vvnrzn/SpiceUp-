@@ -4,27 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>SpiceUp! — Home</title>
-
-  <!-- Favicon -->
   <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/010/950/733/non_2x/chili-hot-and-spicy-food-logo-design-inspiration-chili-pepper-icon-logo-template-free-vector.jpg" type="image/png">
-
-  <!-- Fonts & Styles -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
-  <!-- JS -->
-  <script defer src="script.js"></script>
+  <script src="script.js"></script>
 </head>
+
 <body>
   <!-- Header -->
   <header class="header" role="banner">
     <div class="nav-inner">
-      <div class="brand">
-  <img src=".png" alt="" class="logo">
-  <span>SpiceUp!</span>
-</div>
-
-      <!-- desktop nav -->
+      <div class="brand">SpiceUp!</div>
       <nav class="nav-links" role="navigation" aria-label="Main Navigation">
         <a href="index.html">Home</a>
         <a href="shop.html">Shop</a>
@@ -32,21 +22,18 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <!-- mobile hamburger -->
-      <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-label="Menu toggle">
-      <label for="menu-toggle" class="hamburger" aria-hidden="true">
-        <svg width="20" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </label>
+    <button id="menu-btn" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="24" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
 
     </div>
 
-    <!-- mobile nav panel -->
-    <div class="mobile-nav container" role="navigation" aria-label="Mobile Navigation">
-      <a href="index.html">Home</a> |
-      <a href="shop.html">Shop</a> |
-      <a href="about.html">About</a> |
+    <div class="mobile-nav container">
+      <a href="index.html">Home</a> 
+      <a href="shop.html">Shop</a> 
+      <a href="about.html">About</a> 
       <a href="contact.html">Contact</a>
     </div>
   </header>
@@ -60,7 +47,7 @@
         <a class="cta" href="shop.html">Let's Get Spicy</a>
       </div>
       <div class="hero-image" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1618515299844-7b810f9301df?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jars of spice">
+        <img src="img/hero_index.jpg" alt="Jars of spice">
       </div>
     </section>
 
@@ -69,40 +56,51 @@
       <h2 id="why-title">So, why chili?</h2>
       <div style="display:flex;gap:1rem;flex-direction:column;align-items:center;">
         <p style="max-width:900px;text-align:center;font-size:1.05rem;">
-          Chilies are tiny thrill machines. They add zing, culture, memory, and a little drama to any dish. Plant some, water them (don’t drown them), and watch your kitchen evolve into a global spice market.
+          Chilies are tiny thrill machines. They add zing, culture, memory, and a little drama to any dish. Plant some, water them (don't drown them), and watch your kitchen evolve into a global spice market.
         </p>
         <div style="width:100%;margin-top:1rem;border-radius:12px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.06)">
-          <img src="https://images.unsplash.com/photo-1696650501941-aa9f216b88a1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Colorful peppers" style="width:100%;display:block;object-fit:cover;height:280px;">
+          <img src="img/chili_index.jpg" alt="Colorful peppers" style="width:100%;display:block;object-fit:cover;height:280px;">
         </div>
       </div>
     </section>
 
-    <!-- LINE-UP TEASER -->
-    <section class="section container" aria-labelledby="lineup-title">
-      <h2 id="lineup-title">Meet the line-up</h2>
-      <div class="card-row" style="margin-top:1rem;">
-        <div class="card">
-          <h3 style="margin-top:0">Mild & Friendly</h3>
-          <p>Chilis that whisper: “I like flavor, not theatrics.” Perfect for everyday cooking.</p>
-        </div>
-        <div class="card">
-          <h3 style="margin-top:0">Spicy & Sassy</h3>
-          <p>Has opinions. Will open your sinuses. Great for tacos and bragging rights.</p>
-        </div>
-        <div class="card">
-          <h3 style="margin-top:0">Wild & Unhinged</h3>
-          <p>For the brave storytellers and people who bring milk to dinner just in case.</p>
-        </div>
+    <!-- LINE-UP TEASER --> 
+<section class="section container" aria-labelledby="lineup-title">
+  <h2 id="lineup-title">Meet the line-up</h2>
+  <div class="card-row">
+    
+    <a href="shop.html#scoville" class="card-link">
+      <div class="card">
+        <h3>Mild & Friendly  &#127798;</h3>
+        <p>Chilis that whisper: “I like flavor, not theatrics.” Perfect for everyday cooking.</p>
       </div>
-    </section>
+    </a>
+
+    <a href="shop.html#scoville" class="card-link">
+      <div class="card">
+        <h3>Spicy & Sassy  &#127798; &#127798;</h3>
+        <p>Has opinions. Will open your sinuses. Great for tacos and bragging rights.</p>
+      </div>
+    </a>
+
+    <a href="shop.html#scoville" class="card-link">
+      <div class="card">
+        <h3>Wild & Unhinged  &#127798; &#127798; &#127798;</h3>
+        <p>For the brave storytellers and people who bring milk to dinner just in case.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
 
     <!-- STATS -->
     <section class="section" style="background:var(--muted);">
       <div class="container">
         <h2>How SpiceUp! stacks up</h2>
         <div class="stat-grid" style="margin-top:1rem">
-          <div class="stat-item"><h3>50+</h3><p>Chili personalities</p></div>
-          <div class="stat-item"><h3>30+</h3><p>Countries represented</p></div>
+          <div class="stat-item"><h3>25+</h3><p>Chili personalities</p></div>
+          <div class="stat-item"><h3>7+</h3><p>Countries represented</p></div>
           <div class="stat-item"><h3>∞</h3><p>Ways to spice your life</p></div>
         </div>
       </div>
@@ -111,28 +109,23 @@
     <!-- WELCOME -->
     <section class="section container" style="text-align:center;">
       <h2>Welcome to our table</h2>
-      <p style="max-width:900px;margin:0.75rem auto 1rem auto">We grow seeds, you grow memories. Whether you’re planting for flavor or sheer spectacle — we’ve got something for you.</p>
+      <p style="max-width:900px;margin:0.75rem auto 1rem auto">We grow seeds, you grow memories. Whether you're planting for flavor or sheer spectacle — we've got something for you.</p>
       <a class="btn-primary" href="shop.html">Shop Seeds</a>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer" role="contentinfo">
-    <div class="foot-inner">
-      <div>© 2025 SpiceUp! — All rights reserved</div>
-      <div class="socials">
-        <span style="opacity:0.9">Follow us:</span>
-        <a href="#" aria-label="Instagram (opens in new tab)">
-          <!-- Instagram SVG -->
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-width="1.3"/><circle cx="12" cy="12" r="3.2" stroke="#fff" stroke-width="1.3"/><circle cx="17.5" cy="6.5" r="0.75" fill="#fff"/></svg>
-        </a>
-        <a href="#" aria-label="Facebook (opens in new tab)">
-          <!-- Facebook SVG -->
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 9h2V6h-2c-1.1 0-2 .9-2 2v1H10v3h2v6h3v-6h2.5L18 9h-2z" fill="#fff"/></svg>
-        </a>
-      </div>
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="foot-inner">
+    <div>© 2025 SpiceUp! — All rights reserved</div>
+    <div class="socials">
+      <span class="social-label">Follow us:</span>
+      <a href="#" aria-label="Instagram"> <img src="img/insta.png" alt="Instagram" class="social-icon"></a>
+      <a href="#" aria-label="Facebook"> <img src="img/facebook.png" alt="Facebook" class="social-icon"></a>
     </div>
-  </footer>
+  </div>
+</footer>
+
 </body>
 </html>
 
