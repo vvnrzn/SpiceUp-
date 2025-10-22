@@ -531,12 +531,19 @@ legend{
     display: none;
   }
 
+  .nav-inner {
+    padding: 0;
+    align-items: center;
+  }
+
+
   .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
+  padding: 0.4rem 0.2rem;
   }
 
   .hamburger {
