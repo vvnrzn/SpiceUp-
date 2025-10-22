@@ -589,6 +589,10 @@ legend{
     padding: 2rem 0;
   }
 
+  .card-row {
+    grid-template-columns: 1fr;
+  }
+
   /* Product grid */
   .product {
     min-height: 240px;
@@ -711,3 +715,4 @@ legend{
 .hero-content {
   animation: fadeInUp 1.2s ease forwards;
 }
+
